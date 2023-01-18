@@ -4,7 +4,12 @@ html{
 }
 h1{
   text-align:center;
-  margin-top:24%;
-  font-size: 50px;
+  margin-top:20%;
+  font-size: 100px;
   color:#016fff;
+}
+h2{
+  text-align:center;
+  font-size: 30px;
+  color:#777;
 }
