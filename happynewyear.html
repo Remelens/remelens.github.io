@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+html{
+  background:#bb381e;
+  color:#fff;
+  font-family:"Microsoft Yahei UI","PingFang SC","宋体";
+  font-weight:400;
+  text-align:center;
+}
+h1{
+  color:#eecc00;
+  font-weight:300;
+  font-size:2.55em;
+}
+a{
+  color:#eecc00;
+  text-decoration:none
+}
+a:hover{
+  color:#fff;
+  background:#ffcc00;
+}
+a:hover:before{
+  content:"> ";
+}
+</style>
+  <title>新年快乐！</title>
+</head>
+<body>
+  <h1>各位，新！年！快！乐！</h1>
+  <p>
+    壬寅年即将过去，我们欢送壬寅，喜迎癸卯！<br/>
+    在这里，我祝福大家：新春快乐，阖家幸福！
+  </p>
+  <a href="https://tv.cctv.com/v/v1/VIDEPpWk5NUc2bAWd74FhdEk221230.html">想要看春晚吗？</a><br/>
+  <div class="t-footer" style="color:#ffcc00;"><span id="timeDate">加载天数...</span><span id="times">加载时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("01/22/2023 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} 
+        minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        if(now<grt){
+            days = ( grt-now ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = ( grt-now ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;}
+            minutes = (grt - now ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes);
+             if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+            seconds = (grt - now ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            if(seconds==60){
+                seconds=0;
+                minutes++;
+                mnum = Math.floor(minutes);
+            }
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+            document.getElementById("timeDate").innerHTML = "距癸卯只剩"+dnum+" 天 ";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒啦！";
+        }else{
+            if(seconds==60){
+                seconds=0;
+                minutes++;
+                mnum = Math.floor(minutes);
+            }
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+            document.getElementById("timeDate").innerHTML = "春节到啦！已经过去了"+dnum+" 天 ";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒哟～";
+        }
+    }
+setInterval("createtime()",250);
+</script>
+  </div>
+</body>
+</html>
