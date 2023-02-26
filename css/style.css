@@ -245,7 +245,7 @@ hr{
 }
 @media screen and (max-width:1000px){
     .main{
-        top:83%;
+        top:90%;
         left:auto;
         margin:0 7%;
     }
@@ -259,7 +259,21 @@ hr{
         margin:0;
     }
     .cmd-window{
-        width:100%;
+        width:auto;
+    }
+}
+@media screen and (max-width:420px){
+    .main{
+        top:100%;
+        left:auto;
+        margin:0 7%;
+    }
+}
+@media screen and (max-width:340px){
+    .main{
+        top:110%;
+        left:auto;
+        margin:0 7%;
     }
 }
 .footer{
