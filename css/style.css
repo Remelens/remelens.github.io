@@ -176,6 +176,7 @@ hr{
     border-radius: 6px 6px 0 0;
     background:#eeeeeeaa;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .cmd-window .header .title {
     display:flex;
