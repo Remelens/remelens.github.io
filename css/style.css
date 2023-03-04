@@ -246,9 +246,9 @@ hr{
 .lancolor{
     border:#888 solid 1px;
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:1060px){
     .main{
-        top:90%;
+        top:650px;
         left:auto;
         margin:0 7%;
     }
@@ -265,18 +265,35 @@ hr{
         width:auto;
     }
 }
-@media screen and (max-width:420px){
+@media screen and (max-width:430px){
     .main{
-        top:100%;
+        top:670px;
+        left:auto;
+        margin:0 7%;
+    }
+}
+@media screen and (max-width:390px){
+    .main{
+        top:700px;
         left:auto;
         margin:0 7%;
     }
 }
 @media screen and (max-width:340px){
     .main{
-        top:110%;
+        top:750px;
         left:auto;
         margin:0 7%;
+    }
+}
+@media screen and (max-height:615px){
+    .sidebar{
+        top: 5%;
+    }
+}
+@media screen and (max-height:585px){
+    .sidebar{
+        top: 2%;
     }
 }
 .footer{
