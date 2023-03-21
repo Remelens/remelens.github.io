@@ -245,6 +245,7 @@ hr{
 }
 .lancolor{
     border:#888 solid 1px;
+    display:inline-block;
 }
 @media screen and (max-width:1060px){
     .main{
