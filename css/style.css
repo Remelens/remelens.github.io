@@ -8,6 +8,14 @@ iframe{
     0%{transform:rotate(0);}
     100%{transform:rotate(360deg);}
 }
+@keyframes hoveron{
+    from{
+        z-index:0;
+    }
+    to{
+        z-index:2;
+    }
+}
 html{
     background:#fff;/*style color*/
 }
@@ -130,6 +138,7 @@ hr{
 }
 .linksites a{
     display:inline-block;
+    text-align: center;
     border:0.9px solid #aaa;
     border-radius: 2.5px;
     background: #fff;
@@ -155,18 +164,32 @@ hr{
 }
 .main{
     position: absolute;
-    top:10%;
+    top:5%;
     left:40%;
 }
 .cmd-window{
+    position:absolute;
     width: 600px;
     height: 450px;
     border-radius: 6px;
-    transition: all cubic-bezier(.85,.14,.14,.85) .25s;
     -webkit-transform-origin: center;
     transform-origin: center;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 30px #0003;
+}
+.fntwin{
+    z-index:1;
+    transition: all .25s;
+}
+.aftwin{
+    position:absolute;
+    top:40px;
+    left:40px;
+    z-index:0;
+}
+.aftwin:hover{
+    z-index:2;
 }
 .cmd-window .header{
     display: flex;
@@ -177,9 +200,14 @@ hr{
     align-items: center;
     position: relative;
     border-radius: 6px 6px 0 0;
-    background:#eeeeeeaa;
+    background:#eee5;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
 }
 .cmd-window .header .title {
     display:flex;
@@ -236,22 +264,36 @@ hr{
 .cmd-window h2{
     margin:0;
 }
-.project{
+.project,.item{
     padding:20px;
     padding-bottom: 0;
 }
 .project .about,.project .info{
     padding-top: 10px;
 }
+.item{
+    align-items: center;
+    text-align: --webkit-center;
+    text-align: center;
+}
+.item h2{
+    margin:5px 0;
+    font-size:130%;
+}
 .lancolor{
     border:#888 solid 1px;
     display:inline-block;
 }
+@media screen and (max-width:1070px){
+    body>.main{
+        left:37%;
+    }
+}
 @media screen and (max-width:1060px){
-    .main{
+    body>.main{
         top:650px;
-        left:auto;
-        margin:0 7%;
+        left:7%;
+        right:7%;
     }
     .sidebar{
         width:85%;
@@ -259,10 +301,13 @@ hr{
     html,body{
         height:1200px;
     }
-    .cmd-window .main{
+    .cmd-window .main,.cmd-window.aftwin .main{
         margin:0;
     }
     .cmd-window{
+        width:93%;
+    }
+    .cmd-window.aftwin{
         width:auto;
     }
 }
@@ -287,12 +332,7 @@ hr{
         margin:0 7%;
     }
 }
-@media screen and (max-height:615px){
-    .sidebar{
-        top: 5%;
-    }
-}
-@media screen and (max-height:585px){
+@media screen and (max-height:590px){
     .sidebar{
         top: 2%;
     }
