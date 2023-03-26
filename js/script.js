@@ -9,3 +9,6 @@ document.addEventListener('copy', function (event) {
         document.querySelector('#result').innerText = text + add;
     }
 });
+function closemsg(){
+    document.getElementsByClassName("message")[0].style.display='none';
+}
