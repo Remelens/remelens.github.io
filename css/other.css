@@ -26,7 +26,7 @@ html,body{width:100%;height:100%;}
     background-position: center;
     color: var(--text-color);
     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    font-family: "PingFang SC","Microsoft Yahei","等线","华文细黑",serif;
+    font-family: "PingFang SC","Microsoft Yahei","等线","华文细黑","Noto Sans CJK SC",serif;
     font-size: 87.5%;
     display:flex;
      margin:0;
@@ -38,6 +38,7 @@ html,body{width:100%;height:100%;}
     border-radius: 1em;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);/*safari*/
+    -moz-backdrop-filter: blur(20px);/*firefox*/
     background-color: rgba(255, 255, 255, 0.7);
     margin:auto;
 }
@@ -51,10 +52,7 @@ html,body{width:100%;height:100%;}
     color: #0056b3;
     transition:all 0.2s;
   }
-  ::selection{
-      background: #ff000060;
-  }
-  ::-moz-selection{
+  ::selection,::-webkit-selection,::-moz-selection{
       background:#ff000060;
   }
 .logo{
@@ -62,20 +60,21 @@ width:70px;
 height:70px;
 border-radius: 100%;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar,::-moz-scrollbar{
     width: 7px;
     height: 7px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track,::-moz-scrollbar-track{
     background:none;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb,::-moz-scrollbar-thumb{
     background:#777;
     border-radius:5px;
 }
-::-webkit-scrollbar-thumb:active{
+::-webkit-scrollbar-thumb:active,::-moz-scrollbar-thumb:active{
     background:#555;
 }
-::-webkit-scrollbar-corner{
+::-webkit-scrollbar-corner,::-moz-scrollbar-corner{
     background: none;
 }
+

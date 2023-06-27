@@ -20,7 +20,7 @@ html{
     background:#fff;/*style color*/
 }
 body {
-    font-family: Menlo, Monaco, Consolas, "Lucida Console", "Ubuntu Mono","Microsoft YaHei UI","PingFang SC", "SimHei";
+    font-family: Menlo, Monaco, Consolas, "Lucida Console", "Ubuntu Mono","Microsoft YaHei UI","PingFang SC","Noto Sans CJK SC", "SimHei";
     font-size: 87.5%;
     background-image: url('https://cdn.luogu.com.cn/upload/image_hosting/bxq0pdud.png') ;
     /*洛谷图床-win11背景-开花*/
