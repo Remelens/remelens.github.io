@@ -50,6 +50,8 @@ hr{
 .center{
     display:block;
     text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: center;
 }
 .hr{
     border-bottom: 1px solid #999;
@@ -286,6 +288,7 @@ hr{
     align-items: center;
     text-align: --webkit-center;
     text-align: center;
+    text-align: -moz-center;
 }
 .item h2{
     margin:5px 0;
