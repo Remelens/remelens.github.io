@@ -7,6 +7,8 @@
  .center{
     display: block;
     text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: center;
 }
 .container, .row > [class*="col-"] {
   -webkit-box-sizing: border-box;
