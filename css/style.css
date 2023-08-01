@@ -49,9 +49,9 @@ hr{
 }
 .center{
     display:block;
+    text-align: center;
     text-align: -webkit-center;
     text-align: -moz-center;
-    text-align: center;
 }
 .hr{
     border-bottom: 1px solid #999;
@@ -137,6 +137,7 @@ hr{
     -ms-user-select: none;
     -khtml-user-select: none;
     user-select: none;
+    line-height: 20px;
 }
 .linksites a{
     display:inline-block;
@@ -155,6 +156,7 @@ hr{
     -ms-user-select: none;
     -khtml-user-select: none;
     user-select: none;
+    line-height: 20px;
 }
 .sidebar .websites a:hover, .linksites a:hover{
     border-color: #0078d4;
@@ -285,9 +287,9 @@ hr{
     padding-top: 10px;
 }
 .item{
+    text-align: center;
     align-items: center;
     text-align: --webkit-center;
-    text-align: center;
     text-align: -moz-center;
 }
 .item h2{
