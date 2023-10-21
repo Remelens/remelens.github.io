@@ -69,21 +69,49 @@ hr{
 .icon:hover{
     animation: turnicon 1.5s;
 }
-.input,input.text{
-    box-shadow: 1px 1px 2px 2px #aaaaaa77;
-    border-radius: 3px;
-    padding:3px;
-    margin:3px;
-    background:white;
-    padding-bottom: 4.5px;
-    border:none;
-    border-bottom: 1px solid #888;
-    transition: all 0.2s;
-    outline: none;
+.input,input.text,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+    padding: 5px;
+    border: 1px solid #303030;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color:#000;
+    -webkit-appearance: none;
 }
-.input:hover,input.text:focus{
-    padding:3px;
-    border-bottom: 2.5px solid #007bff;
+textarea {
+    resize: vertical;
+}
+textarea,input{
+    outline:none;
+}
+.input,input.text,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input.text,textarea{
+    border-radius: 3px;
+    border:none;
+    box-shadow: inset 0px -1px 0px 0px #777777;
+    -webkit-box-shadow: inset 0px -1px 0px 0px #777777;
+    transition: all 0.2s;
+}
+.input:hover,input.text:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input.text:focus,textarea:focus{
+    box-shadow: inset 0px -1px 0px 0px #007bff;
+    -webkit-box-shadow: inset 0px -2px 0px 0px #007bff;
     transition: all 0.2s;
 }
 .cursor{
@@ -121,8 +149,9 @@ hr{
     font-size:112%;
     margin:10px 0;
 }
-.sidebar .websites a{
+.sidebar .websites a,.linksites a{
     display:inline-block;
+    text-align: center;
     border:0.9px solid #aaa;
     border-radius: 2.5px;
     background: #fff;
@@ -140,23 +169,8 @@ hr{
     line-height: 20px;
 }
 .linksites a{
-    display:inline-block;
-    text-align: center;
-    border:0.9px solid #aaa;
-    border-radius: 2.5px;
-    background: #fff;
-    color:#000;
     width:100px;
-    padding:4px 0;
     margin:5px;
-    font-size:90%;
-    cursor: default;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;
-    line-height: 20px;
 }
 .sidebar .websites a:hover, .linksites a:hover{
     border-color: #0078d4;
@@ -291,7 +305,7 @@ hr{
     align-items: center;
     text-align: --webkit-center;
     text-align: -moz-center;
-    overflow: scroll;
+    overflow: hidden;
     height: calc( 100% - 40px );
 }
 .item h2{
@@ -301,6 +315,9 @@ hr{
 .lancolor{
     border:#888 solid 1px;
     display:inline-block;
+}
+.license{
+    fill:#000;
 }
 @media screen and (max-width:1070px){
     body>.main{
@@ -336,6 +353,9 @@ hr{
         left:auto;
         margin:0 7%;
     }
+    .item{
+        overflow: scroll;
+    }
 }
 @media screen and (max-width:390px){
     .main{
@@ -365,4 +385,65 @@ hr{
     color:#eee;
     margin:0 auto;
     width:500px;
+}
+@media (prefers-color-scheme: dark) {
+    body{
+        background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/o2q3fsbe.png);
+    }
+    a:hover, a:active {
+        color: #86c0ff;
+        transition:all 0.2s;
+    }
+    .sidebar{
+        background-color: #2B314177;
+        color:#eee;
+    }
+    .sidebar .header{
+        color:#fff;
+    }
+    .sidebar .websites a,.linksites a{
+        border-color: #777;
+        background:#444;
+        color:#fff;
+    }
+    .sidebar .websites a:hover, .linksites a:hover{
+        border-color: #999;
+        background:#555;
+    }
+    .sidebar .websites a:active, .linksites a:active{
+        border-color: #aaa;
+        background:#777;
+    }
+    .cmd-window{
+        box-shadow: 0px 0px 100px #fff3;
+    }
+    .cmd-window .header{
+        background:#2b314188;
+        color:#fff;
+    }
+    .cmd-window .main{
+        background:#3c3c3c;
+        color:#ccc;
+    }
+    .buttonbar .uicon img{filter: invert(100%);}
+    .buttonbar .uicon.min:hover,.buttonbar .uicon.max:hover{
+        background:#99999977;
+    }
+    .license{
+        fill:#ccc;
+    }
+    .cursor{
+        border-color:#fff;
+    }
+    .input,input.text,
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    textarea{
+        border: 1px solid #303030;
+        width: 100%;
+        background: #303030;
+        color:#eee;
+    }
 }
