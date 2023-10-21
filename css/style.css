@@ -387,6 +387,7 @@ input.text:focus,textarea:focus{
     width:500px;
 }
 @media (prefers-color-scheme: dark) {
+    html{background:#1a2030;}
     body{
         background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/o2q3fsbe.png);
     }

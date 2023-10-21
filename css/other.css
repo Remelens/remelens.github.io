@@ -78,3 +78,19 @@ border-radius: 100%;
     background: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  html{
+    background-color: #1a2030;
+  }
+  body:before,body{
+    background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/o2q3fsbe.png);
+  }
+  body{color:#ccc;}
+  a:hover, a:active {
+    color: #86c0ff;
+    transition:all 0.2s;
+  }
+  #box{
+    background-color:#2B314177;
+  }
+}
