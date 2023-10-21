@@ -79,9 +79,6 @@ border-radius: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
-  html{
-    background-color: #1a2030;
-  }
   body:before,body{
     background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/o2q3fsbe.png);
   }
