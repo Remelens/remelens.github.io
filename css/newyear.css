@@ -1,0 +1,16 @@
+body{
+    background-image:url('https://z1.ax1x.com/2023/10/25/piVRCEd.jpg');
+    /*新年背景亮色*/
+}
+.cmd-window .header{
+    background:#FF504155;
+}
+@media (prefers-color-scheme: dark) {
+    html{background:#52140A;}
+    body{
+        background-image: url(https://z1.ax1x.com/2023/10/25/piVRPUA.jpg);
+    }
+    .cmd-window .header{
+        background:#AF3F2C33;
+    }
+}
