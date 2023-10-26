@@ -5,6 +5,10 @@ body{
 .cmd-window .header{
     background:#FF504155;
 }
+.buttonbar .uicon img{filter: invert(100%);}
+.buttonbar .uicon.min:hover,.buttonbar .uicon.max:hover{
+    background:#99999977;
+}
 @media (prefers-color-scheme: dark) {
     html{background:#52140A;}
     body{
