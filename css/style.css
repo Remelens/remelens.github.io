@@ -248,6 +248,10 @@ input.text:focus,textarea:focus{
     margin: 0 10px 0 6px;
     display:inline-block;
 }
+.project .info{
+    display:inline-flex;
+    align-items: center;
+}
 .buttonbar{
     height: 100%;
     display:flex;
@@ -365,10 +369,13 @@ input.text:focus,textarea:focus{
     }
 }
 @media screen and (max-width:340px){
-    .main{
-        top:750px;
-        left:auto;
-        margin:0 7%;
+    body>.main{
+        top:690px;
+        left:-5%;
+        right:10%;
+    }
+    .center{
+        margin:0;
     }
 }
 @media screen and (max-height:590px){
