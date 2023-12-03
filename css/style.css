@@ -323,12 +323,28 @@ input.text:focus,textarea:focus{
 .license{
     fill:#000;
 }
-@media screen and (max-width:1070px){
-    body>.main{
-        left:37%;
+@media screen and (max-width:1080px){
+    .cmd-window{
+        width: 500px;
     }
 }
-@media screen and (max-width:1060px){
+@media screen and (max-width:1040px){
+    body>.main{
+        left:45%;
+    }
+    .cmd-window{
+        width: 400px;
+    }
+}
+@media screen and (max-width:900px){
+    body>.main{
+        left:50%;
+    }
+    .cmd-window{
+        width: 350px;
+    }
+}
+@media screen and (max-width:790px){
     body>.main{
         top:690px;
         left:7%;
