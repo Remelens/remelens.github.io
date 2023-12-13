@@ -130,6 +130,7 @@ input.text:focus,textarea:focus{
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);/*safari*/
     background-color: rgba(255, 255, 255, 0.7);
+    max-width:320px;
 }
 .sidebar h2,.sidebar h4{
     margin:0;
@@ -470,4 +471,11 @@ input.text:focus,textarea:focus{
         background: #303030;
         color:#eee;
     }
+}
+
+::selection{
+    background:#1460b277;
+}
+::-moz-selection{
+    background:#1460b277;
 }

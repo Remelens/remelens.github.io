@@ -5,6 +5,35 @@ body{
 .cmd-window .header{
     background:#FF504155;
 }
+.sidebar{
+    background:#fbe7e577;
+}
+.sidebar a{
+    color:#00c3ff;
+}
+.sidebar a:hover{
+    color:#029bca;
+}
+a{
+    color:#d99100;
+}
+a:hover{
+    color:#FF5041;
+}
+.sidebar .websites a:hover, .linksites a:hover {
+    border-color:#FF5041;
+    background-color: #fde7e5;
+    color:black;
+}
+.sidebar .websites a:active, .linksites a:active {
+    border-color:#c13e32;
+    background-color: #e7ceca;
+    color:black;
+}
+.input:hover, input.text:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input.text:focus, textarea:focus {
+    box-shadow: inset 0px -1px 0px 0px #999900;
+    -webkit-box-shadow: inset 0px -2px 0px 0px #999900;
+}
 .buttonbar .uicon img{filter: invert(100%);}
 .buttonbar .uicon.min:hover,.buttonbar .uicon.max:hover{
     background:#99999977;
@@ -14,7 +43,33 @@ body{
     body{
         background-image: url(https://z1.ax1x.com/2023/10/25/piVRPUA.jpg);
     }
+    a{
+        color:#ffa200;
+    }
     .cmd-window .header{
         background:#AF3F2C33;
     }
+    .sidebar{
+        background:#46191177;
+    }
+    .sidebar .websites a:hover, .linksites a:hover {
+        border-color:#999;
+        background-color: #555;
+        color:white;
+    }
+    .sidebar .websites a:active, .linksites a:active {
+        border-color:#aaa;
+        background-color: #777;
+        color:white;
+    }
+    .input:hover, input.text:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input.text:focus, textarea:focus {
+        box-shadow: inset 0px -1px 0px 0px #c13e32;
+        -webkit-box-shadow: inset 0px -2px 0px 0px #c13e32;
+    }
+}
+::selection{
+    background:#cd2b0e77;
+}
+::-moz-selection{
+    background:#cd2b0e77;
 }
