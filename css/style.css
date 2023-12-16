@@ -353,7 +353,7 @@ input.text:focus,textarea:focus{
     }
     .message{left:0;}
     .sidebar{
-        width:85%;
+        margin: 0 calc( 50% - 180px);
     }
     html,body{
         height:1200px;
@@ -384,15 +384,17 @@ input.text:focus,textarea:focus{
         left:auto;
         margin:0 7%;
     }
+    .sidebar{
+        margin:0;
+        width:calc(100% - 40px);
+        max-width:calc(100% - 40px);
+    }
 }
 @media screen and (max-width:340px){
     body>.main{
-        top:690px;
+        top:705px;
         left:-5%;
         right:10%;
-    }
-    .center{
-        margin:0;
     }
 }
 @media screen and (max-height:590px){
