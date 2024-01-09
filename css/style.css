@@ -173,6 +173,23 @@ input.text:focus,textarea:focus{
     width:100px;
     margin:5px;
 }
+.linksites a:hover{
+    position:relative;
+}
+.friendlink.linksites a:hover::after{
+    content:attr(data-description);
+    position:absolute;
+    border:1px solid #aaa;
+    border-radius: 4px;
+    padding:1px 3px;
+    margin-top:10px;
+    background:#eee;
+    word-break: keep-all;
+    width:fit-content;
+    color:#000;
+    display:block;
+    opacity: 0.9;
+}
 .sidebar .websites a:hover, .linksites a:hover{
     border-color: #0078d4;
     background:#e0eef9;
@@ -180,6 +197,10 @@ input.text:focus,textarea:focus{
 .sidebar .websites a:active, .linksites a:active{
     border-color: #005499;
     background:#CCE4F7;
+}
+.listdep{
+    margin:0;
+    font-size:120%;
 }
 .main{
     position: absolute;
@@ -377,6 +398,12 @@ input.text:focus,textarea:focus{
     .item{
         overflow: scroll;
     }
+    .friendlink.linksites a:hover::after{
+        position:absolute;
+        margin-top:0;
+        bottom:35px;
+        word-break: unset;
+    }
 }
 @media screen and (max-width:390px){
     .main{
@@ -427,6 +454,11 @@ input.text:focus,textarea:focus{
     }
     .sidebar .header{
         color:#fff;
+    }
+    .friendlink.linksites a:hover::after{
+        border:1px solid #777;
+        color:#eee;
+        background:#222;
     }
     .sidebar .websites a,.linksites a{
         border-color: #777;
