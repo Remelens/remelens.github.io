@@ -1,2 +1,9 @@
+#fuck u baidu spider lol
+User-agent: bingbot
+User-agent: Googlebot
+User-agent: YandexBot
+User-agent: AhrefsBot
+Allow: /
+
 User-agent: *
 Disallow:/
