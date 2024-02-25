@@ -190,6 +190,9 @@ input.text:focus,textarea:focus{
     display:block;
     opacity: 0.9;
 }
+.friendlink.linksites a.disabled:hover::after{
+    content:"[停运]" attr(data-description);
+}
 .sidebar .websites a:hover, .linksites a:hover{
     border-color: #0078d4;
     background:#e0eef9;
@@ -198,6 +201,11 @@ input.text:focus,textarea:focus{
     border-color: #005499;
     background:#CCE4F7;
 }
+/*.linksites a.disabled,.linksites a.disabled:hover,.linksites a.disabled:active{
+    border:0.9px solid #999;
+    background: #ddd;
+    color:#444;
+}*/
 .listdep{
     margin:0;
     font-size:120%;
@@ -473,6 +481,11 @@ input.text:focus,textarea:focus{
         border-color: #aaa;
         background:#777;
     }
+    /*.linksites a.disabled,.linksites a.disabled:hover,.linksites a.disabled:active{
+        border:0.9px solid #555;
+        background: #333;
+        color:#aaa;
+    }*/
     .cmd-window{
         box-shadow: 0px 0px 100px #fff3;
     }
