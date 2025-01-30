@@ -1,142 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Reme赛博小屋</title>
-        <link rel="icon" href="https://cdn.luogu.com.cn/upload/image_hosting/wzzqwiik.png">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/newyear.css">
-        <script type="text/javascript" src="./js/script.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Reme赛博小窝</title>
+        <link rel="icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" integrity="sha512-uushWJqqsPYQOOyatyQoJ44WljQCC70km/MB94XcZVajojoEWQ7S4DoFMtIh4AqmS0to9mI84jxZHR2aV/OIlA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="renderer" content="webkit">
-        <meta name="description" content="Reme赛博小屋">
-<script>
-function LoadTwemoji(){
-	twemoji.parse(document.body,  {
-    base:'https://cdnjs.cloudflare.com',         // default MaxCDN
-    ext: '.svg',          // default ".png"
-    className: 'twemoji emoji',    // default "emoji"
-    folder: '/ajax/libs/twemoji/15.0.3/svg/'        // in case it's specified
-  });
-}
-document.addEventListener("DOMContentLoaded",LoadTwemoji);
-</script>
+        <meta name="title" content="Reme赛博小窝">
+        <meta name="description" content="企鹅也是鹅啊，火腿也是腿啊～ 这是一只火腿味企鹅的家～">
     </head>
     <body>
-        <div class="sidebar center">
-            <div class="header">
-                <img class="icon headicon" alt="" src="https://cdn.luogu.com.cn/upload/image_hosting/wzzqwiik.png">
-                <h2>Remelens</h2>
-                <div class="about input"><span class="cursor">把无限放在你的手掌上，永恒在一刹那里收藏。</span></div>
+        <div id="center-box">
+            <div class="basic-info">
+                <div class="avatar">
+                    <img id="avatar" alt="avatar-remelens" src="https://cdn.luogu.com.cn/upload/image_hosting/wzzqwiik.png">
+                </div>
+                <div class="title"><span id="name">Remelens</span></div>
+                <div class="description"><span id="desc">企鹅也是鹅啊，火腿也是腿啊 ~<span class="cursor">&nbsp;</span></span></div>
+                <div class="social-accounts">
+                    <a href="https://github.com/Remelens" target="_blank" data-title="GitHub" class="hover-desc social-link"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/remelens" target="_blank" data-title="X (Formerly Twitter)" class="hover-desc social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://bsky.app/profile/remelens.bsky.social" target="_blank" data-title="Bluesky" class="hover-desc social-link"><i class="fa-brands fa-bluesky"></i></a>
+                    <a href="https://www.reddit.com/u/remelens/" target="_blank" data-title="Reddit" class="hover-desc social-link"><i class="fa-brands fa-reddit"></i></a>
+                    <a href="mailto:remelens123@gmail.com" target="_blank" data-title="E-Mail" class="hover-desc social-link"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
-            <a href="https://github.com/Remelens" target="_blank">GitHub</a> | <a href="https://x.com/remelens" target="_blank">X</a> | <a href="mailto:HelloOSMe@helloos.eu.org" target="_blank">Email</a>
-            <div class="hr"></div>
-            <div class="aboutme">
-                <h2>About Me</h2>
-                <div class="item-abt">WHOAMI : Full-stack developer</div>
-                <div class="item-abt">COMMON : ChatRoom,Truthboard</div>
-                <div class="item-abt">Hobbies : Coding,Science fictions</div>
+            <div id="links">
+                <a class="firstln" href="/about">关于</a> |
+                <a class="firstln" href="https://blog.remelens.me/">博客</a> |
+                <a class="firstln" href="https://index.remelens.me/">导航</a> |
+                <a class="firstln" href="/friends">友链</a>
             </div>
-            <div class="hr"></div>
-            <div class="websites">
-                <a href="https://blog.remelens.me">博客</a><a href="https://dir.remelens.me">web导航</a><a href="https://api.remelens.me">接口</a>
-            </div>
-            <div class="hr"></div>
-                <span>Copyright 2022-2025 <a href="/">Remelens</a></span><br/>
-                <span>除非特别注明, 本站内容使用<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>授权。</span><br/>
-                <span>Powered By <a href="https://github.com/Remelens/Remelens.github.io">Github Pages</a></span><br/>
-                <span><a href="https://icp.gov.moe/?keyword=20230400" target="_blank">萌ICP备20230400号</a></span>
+            <footer class="footer" id="footer">
+                &copy; 2022-2025 Remelens<br/>
+                Powered by <a href="https://pages.github.com">GitHub Pages</a> &amp; <a href="https://pages.cloudflare.com">Cloudflare Pages</a>  / <a href="https://github.com/Remelens/Remelens.github.io">Source Repo</a><br/>
+                <a href="https://icp.gov.moe/?keyword=20230400" target="_blank">萌ICP备20230400号</a>
+            </footer>
         </div>
-        <div class="main">
-            <div class="cmd-window fntwin" id="window1">
-                <div class="header">
-                    <div class="title"><div class="uicon"><img width="14" src="./images/github.png" alt=""></div><span>GitHub</span></div>
-                    <div class="buttonbar">
-                        <div class="uicon min"><img width="12" src="./images/min.png" alt=""></div>
-                        <div class="uicon max"><img width="12" src="./images/max.png" alt=""></div>
-                        <div class="uicon close"><img width="14" src="images/close.png" alt=""></div>
-                    </div>
-                </div>
-                <div class="main">
-                    <div class="project">
-                    <h2><a href="https://github.com/Remelens/Rlngnahth">Rlngnahth</a></h2>
-                    <div class="about">
-                        Typecho主题，外观布局来原于Hexo Stellar老版（
-                    </div>
-                    <div class="info">
-                        <span class="lancolor" style="display:inline-block;background:#4F5D95; width:10px;height:10px;border-radius: 100%;"></span> PHP&nbsp;&nbsp;
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="license">
-                            <path color="#fff" fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path>
-                        </svg>  MIT license 
-                    </div>
-                    </div>
-                    <div class="hr"></div>
-                    <div class="project">
-                        <h2><a href="https://github.com/Remelens/Win11-WebUI">Win11-WebUI</a></h2>
-                        <div class="about">
-                            Win11 Web UI 仿制UI库
-                        </div>
-                        <div class="info">
-                            <span class="lancolor" style="display:inline-block;background:#563d7c; width:10px;height:10px;border-radius: 100%;"></span> CSS&nbsp;&nbsp;
-                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="license">
-                                <path color="#fff" fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path>
-                            </svg> GPL-3.0 license 
-                        </div>
-                    </div>
-                    <div class="hr"></div>
-                </div>
-            </div>
-            <div class="cmd-window aftwin" id="window2">
-                <div class="header">
-                    <div class="title" data-float="false" data-op="0"><div class="uicon"><img width="14" data-click="false" data-flip="false" data-invert="false" data-rounded="false" src="./images/thispc.png" alt=""></div><span>杂项</span></div>
-                    <div class="buttonbar">
-                        <div class="uicon min"><img width="12" src="./images/min.png" alt=""></div>
-                        <div class="uicon max"><img width="12" src="./images/max.png" alt=""></div>
-                        <div class="uicon close"><img width="14" src="images/close.png" alt=""></div>
-                    </div>
-                </div>
-                <div class="main">
-                    <div class="item">
-                    <div class="friendlink linksites">
-                        <h2 style="margin-bottom: 10px;">友情链接(不分前后)</h2>
-                        <h4 class="listdep">Chatrooms</h4>
-                        <a href="https://reset-chan.us.kg/" data-description="可以让我在邮筒中躲会雨吗？" target="_blank">信箱避难所</a>
-                        <a href="https://paperee.guru/" data-description="uwu!" target="_blank">ee's blog</a>
-                        <a href="https://blog.zhangsoft.link/" data-description="基于ZhangBlog" target="_blank">MrZhang365</a>
-                        <a href="https://www.pillows.net.eu.org/" data-description="找不到的垃圾场" target="_blank">404的垃圾场</a>
-                        <a href="http://rnr-runeri-a.cloudns.org/" data-description="落霞与孤鹭齐飞，秋水共长天一色" target="_blank">RK'SBLOGS</a>
-                        <a href="https://minecraftwindows11.github.io/" data-description="许多图书，一起来看！" target="_blank">Nova图书馆</a>
-                        <a href="http://zzcm.fun/" data-description="某个智障的个人主页" target="_blank">zzChumo</a>
-                        <a href="https://thz.cool/" data-description="A small site in the world" target="_blank">0x24a</a>
-                        <h4 class="listdep">Truthboard</h4>
-                        <a href="https://ceteaonia.github.io/" data-description="不可追溯的梦" target="_blank">Ceteaonia</a>
-                        <a href="https://cloud.sd.cn/" data-description="不是你来这干吗?(疑惑)" target="_blank">网络一隅</a>
-                        <a href="https://mount-rain.link/" data-description="我们可以改变一切，哪怕一无所有。" target="_blank">林中之雨</a>
-                        <h4 class="listdep">Luogu</h4>
-                        <a href="https://www.changwenxuan.cn/" data-description="君行九万里 白云处处 醉后山河悬剑" target="_blank">ChangWenXuan</a>
-                        <a href="https://lengsc.xyz/" data-description="心向往之，便是家园。" target="_blank">螘穴</a>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!-- 仿win11对话框，全站公告 
-        <div class="message" style="display:block;">
-            <div class="cmd-window" id="window1">
-                <div class="header">
-                    <div class="title" data-float="false" data-op="0"><span>&nbsp;關站了</span></div>
-                    <div class="buttonbar">
-                        <div class="uicon close" onclick="closemsg()"><img width="14" src="images/close.png" alt=""></div>
-                    </div>
-                </div>
-                <div class="main">
-                    <div style="padding:20px;padding-bottom: 10px;">
-                        <span></span>
-                        <div class="linksites" style="text-align: center;padding-top: 10px;">
-                            <a href="javascript:;" style="width:80px;" onclick="closemsg()">OK</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- 结束注释 -->
+        <script src="/js/script.js"></script>
     </body>
 </html>
