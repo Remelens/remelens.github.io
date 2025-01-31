@@ -160,3 +160,11 @@ a:hover{
     background:var(--text-color);
     color:var(--bg-color);
 }
+/* START OF DARK MODE */
+@media (prefers-color-scheme: dark) {
+    :root{
+        --bg-color:#272829;
+        --text-color:#f3f2eb;
+        --text-key-color:#fff;
+    }
+}
