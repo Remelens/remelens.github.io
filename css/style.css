@@ -125,7 +125,7 @@ a:hover{
     margin:auto;
 }
 .cursor{
-    animation:1s steps(2, jump-none) 1s infinite reverse blink;
+    animation:1s steps(2, jump-none) 0s infinite reverse blink;
     background:var(--text-color);
     color:var(--text-color);
     display:inline-block;
