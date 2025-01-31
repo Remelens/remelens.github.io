@@ -119,6 +119,9 @@ a:hover{
 #img404{
     width:140px;
 }
+#img404 .svg-icon{
+    fill:var(--text-color);
+}
 #contents{
     max-width:50%;
     text-align:left;
